@@ -44,7 +44,7 @@
   margin: 0 0 0.6rem;
 
   font-family: "Poppins", sans-serif;
-  font-size: 1.8rem;
+  font-size: var(--text-xl);
   font-weight: 600;
 
   color: var(--text);
@@ -84,7 +84,7 @@
   }
 
   .highlight-card p:last-child {
-    font-size: 1.05rem;
+    font-size: var(--text-md);
     line-height: 1.7;
   }
 }

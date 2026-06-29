@@ -8,9 +8,9 @@
   margin: 0 0 1.5rem;
 
   font-family: "Poppins", sans-serif;
-  font-size: clamp(2.8rem, 4vw, 4rem);
+  font-size: var(--text-2xl);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.1;
 
   color: var(--text);
 }
@@ -91,7 +91,7 @@
   margin: 0 0 1rem;
 
   font-family: "Poppins", sans-serif;
-  font-size: 2.2rem;
+  font-size: var(--text-xl);
   font-weight: 700;
   line-height: 1.1;
 
@@ -101,8 +101,8 @@
 .program-content p {
   margin: 0;
 
-  font-size: 1.25rem;
-  line-height: 1.8;
+  font-size: var(--text-md);
+  line-height: 1.6;
 
   color: var(--text-light);
 }
