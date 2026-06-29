@@ -1,0 +1,64 @@
+---
+import { event } from "../data/event";
+---
+
+<section class="about" id="about">
+  <div class="container">
+
+    <div class="about-grid">
+
+      <div class="about-content">
+
+        <p class="section-label">ÜBER DEN CSD</p>
+
+        <h2>Vielfalt sichtbar machen.</h2>
+
+        <p class="about-intro">
+          Der Christopher Street Day {event.city} bringt Menschen zusammen,
+          die sich für eine offene, vielfältige und demokratische Gesellschaft
+          einsetzen.
+        </p>
+
+        <p>
+          Gemeinsam schaffen wir einen Ort der Begegnung, an dem Respekt,
+          Akzeptanz und Gleichberechtigung im Mittelpunkt stehen. Mit einer
+          Demonstration, einem Bühnenprogramm und vielen Gesprächen setzen wir
+          ein sichtbares Zeichen für Menschenrechte und gesellschaftlichen
+          Zusammenhalt.
+        </p>
+
+        <p>
+          Der CSD lebt vom Engagement vieler Ehrenamtlicher, Unterstützer:innen
+          und Besucher:innen. Jede Person ist willkommen, diesen Tag
+          mitzugestalten.
+        </p>
+
+        <a
+
+  class="flyer-link"
+
+  href={event.flyerPdf}
+
+  target="_blank"
+
+  rel="noopener noreferrer"
+
+>
+          Programmflyer ansehen →
+        </a>
+
+      </div>
+
+      <aside class="about-flyer">
+
+        <img
+          src={event.flyerImage}
+          alt={`Programmflyer ${event.title}`}
+        />
+
+      </aside>
+
+    </div>
+
+  </div>
+</section>

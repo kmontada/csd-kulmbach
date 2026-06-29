@@ -1,0 +1,122 @@
+.about {
+  padding: 8rem 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 6rem;
+  align-items: start;
+}
+
+.about-content {
+  max-width: 640px;
+}
+
+.section-label {
+  margin: 0 0 1rem;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: var(--primary);
+}
+
+.about h2 {
+  margin: 0 0 2rem;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  line-height: 1.05;
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+.about-intro {
+  margin: 0 0 2rem;
+
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-weight: 500;
+
+  color: var(--text);
+}
+
+.about p {
+  margin: 0 0 1.5rem;
+
+  font-size: 1.08rem;
+  line-height: 1.9;
+
+  color: var(--text-light);
+}
+
+.flyer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  margin-top: 1rem;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+
+  color: var(--primary);
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.flyer-link:hover {
+  opacity: 0.75;
+}
+
+.about-flyer {
+  display: block;
+  max-width: 360px;
+  margin-left: auto;
+  margin-top: 2rem;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.about-flyer:hover {
+  transform: translateY(-4px);
+}
+
+.about-flyer img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 14px;
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 900px) {
+  .about {
+    padding: 6rem 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-flyer {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}

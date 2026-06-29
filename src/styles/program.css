@@ -1,0 +1,140 @@
+/* Program Section */
+.program {
+  padding: 8rem 0;
+}
+
+/* Title */
+.program h2 {
+  margin: 0 0 1.5rem;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: var(--text);
+}
+
+/* Intro */
+.program-intro {
+  max-width: 760px;
+  margin: 0 0 5rem;
+
+  font-size: 1.35rem;
+  line-height: 1.8;
+
+  color: var(--text-light);
+}
+
+/* List */
+.program-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Item */
+.program-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 4rem;
+
+  padding: 4rem 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.program-item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Time */
+.program-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.time-top,
+.time-bottom {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(3.8rem, 7vw, 5rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+
+  color: var(--primary);
+
+  transition: color 0.2s ease;
+}
+
+.program-item:hover .time-top,
+.program-item:hover .time-bottom {
+  color: var(--primary-dark);
+}
+
+/* Label */
+.program-label {
+  margin-top: 0.5rem;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: var(--primary);
+}
+
+/* Content */
+.program-content h3 {
+  margin: 0 0 1rem;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+
+  color: var(--text);
+}
+
+.program-content p {
+  margin: 0;
+
+  font-size: 1.25rem;
+  line-height: 1.8;
+
+  color: var(--text-light);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+
+  .program {
+    padding: 6rem 0;
+  }
+
+  .program-intro {
+    font-size: 1.15rem;
+    margin-bottom: 3rem;
+  }
+
+  .program-item {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 3rem 0;
+  }
+
+  .time-top,
+  .time-bottom {
+    font-size: 3rem;
+  }
+
+  .program-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .program-content p {
+    font-size: 1.1rem;
+  }
+}

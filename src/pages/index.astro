@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Navigation from "../components/Navigation.astro";
+import Highlights from "../components/Highlights.astro";
+import About from "../components/About.astro";
+import Program from "../components/Program.astro";
+import Route from "../components/Route.astro";
+import Participate from "../components/Participate.astro";
+import Faq from "../components/Faq.astro";
+import Footer from "../components/Footer.astro";
+import Sponsors from "../components/Sponsors.astro";
+---
+
+<Layout>
+  <Hero />
+  <Highlights />
+  <div class="section-divider"></div>
+  <About />
+  <div class="section-divider"></div>
+  <Program />
+  <div class="section-divider"></div>
+  <Route />
+  <div class="section-divider"></div>
+  <Participate />
+  <div class="section-divider"></div>
+  <section id="spenden" class="donation-section">
+
+  <div class="container">
+
+    <p class="section-label">SPENDEN</p>
+
+    <h2>Unterstütze den CSD</h2>
+
+    <p>
+
+      Der Christopher Street Day Kulmbach wird ehrenamtlich organisiert.
+
+      Jede Spende hilft uns, Vielfalt sichtbar zu machen.
+
+    </p>
+
+    <div class="donation-box">
+
+  <p><strong>Empfänger</strong><br/>
+  Stadt Kulmbach</p>
+
+  <p><strong>Bank</strong><br/>
+  Sparkasse Kulmbach Kronach</p>
+
+  <p><strong>IBAN</strong><br/>
+  DE12 3456 7890 1234 5678 90</p>
+
+  <p><strong>Verwendungszweck</strong><br/>
+  Spende CSD Kulmbach</p>
+
+  <button class="copy-btn" id="copyIban" type="button">
+  IBAN kopieren
+</button>
+
+</div>
+
+  </div>
+
+</section>
+  <Faq />
+  <div class="section-divider"></div>
+</Layout>
+<script>
+  const iban = "DE12 3456 7890 1234 5678 90";
+
+  const button = document.getElementById("copyIban");
+
+  if (button) {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      navigator.clipboard.writeText(iban).then(() => {
+        button.textContent = "✓ kopiert";
+
+        button.style.color = "#2ecc71";
+
+        setTimeout(() => {
+          button.textContent = "IBAN kopieren";
+          button.style.color = "";
+        }, 1800);
+      });
+    });
+  }
+</script>
+<Sponsors />
+<div class="section-divider"></div>
+<Footer />

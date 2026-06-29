@@ -1,0 +1,42 @@
+---
+import { faq } from "../data/faq";
+---
+
+<section class="faq" id="faq">
+
+  <div class="container">
+
+    <p class="section-label">FAQ</p>
+
+    <h2>Häufige Fragen.</h2>
+
+    <p class="faq-intro">
+      Hier findest du Antworten auf die wichtigsten Fragen rund um den
+      Christopher Street Day Kulmbach.
+    </p>
+
+    <div class="faq-list">
+
+      {faq.map((item) => (
+
+        <details class="faq-item">
+
+          <summary>
+
+            <span>{item.question}</span>
+
+            <span class="plus">+</span>
+
+          </summary>
+
+          <p>{item.answer}</p>
+
+        </details>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>

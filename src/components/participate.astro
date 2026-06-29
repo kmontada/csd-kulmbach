@@ -1,0 +1,43 @@
+---
+import { participate } from "../data/participate";
+---
+
+<section class="participate" id="mitmachen">
+
+  <div class="container">
+
+    <p class="section-label">MITMACHEN</p>
+
+    <h2>Der CSD lebt von Menschen.</h2>
+
+    <p class="participate-intro">
+      Ob als Besucher:in, Helfer:in oder Sponsor:in – jede Unterstützung trägt
+      dazu bei, Vielfalt sichtbar zu machen und den CSD Kulmbach zu einem
+      besonderen Tag für alle zu machen.
+    </p>
+
+    <div class="participate-grid">
+
+      {participate.map((item) => (
+
+        <article class="participate-card">
+
+          <div class="participate-line"></div>
+
+          <h3>{item.title}</h3>
+
+          <p>{item.text}</p>
+
+          <a href={item.link}>
+            {item.label} →
+          </a>
+
+        </article>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>

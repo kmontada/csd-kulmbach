@@ -1,0 +1,72 @@
+.top-bar {
+  background: var(--background);
+  padding: 0.6rem 0;
+}
+
+.top-bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  color: var(--primary);
+  letter-spacing: -0.02em;
+}
+
+/* Spendenbereich */
+.donate-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.donate-text {
+  font-size: 0.95rem;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+.donate-btn {
+  background: var(--primary);
+  color: white;
+
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+}
+
+.donate-btn:hover {
+
+  transform: translateY(-1px);
+
+  opacity: 0.95;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+
+}
+
+/* MOBILE TOPBAR */
+@media (max-width: 900px) {
+  .top-bar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .donate-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

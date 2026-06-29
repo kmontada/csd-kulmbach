@@ -1,0 +1,96 @@
+/* =========================
+   CONTAINER SYSTEM
+========================= */
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+/* =========================
+   SECTION SYSTEM
+========================= */
+
+section {
+  padding: clamp(3rem, 6vw, 6rem) 0;
+  scroll-margin-top: 90px;
+}
+
+/* alternierende Backgrounds */
+section:nth-child(even) {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* =========================
+   HERO / SECTION SPACING VARIANTS
+========================= */
+
+.hero {
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-lg);
+}
+
+.highlights {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+/* =========================
+   GLOBAL UX POLISH
+========================= */
+
+/* bessere Lesebreite für Text */
+p {
+  max-width: 70ch;
+}
+
+/* =========================
+   RESPONSIVE LAYOUT
+========================= */
+
+@media (max-width: 900px) {
+
+  section {
+    padding: var(--space-md) 0;
+  }
+
+  .container {
+    width: min(100% - 1.2rem, var(--max-width));
+  }
+
+}
+/* =========================
+
+   SECTION DIVIDER
+
+========================= */
+
+.section-divider {
+
+  height: 3px;
+
+  width: 100%;
+
+  background: linear-gradient(
+
+    90deg,
+
+    #e40303,
+
+    #ff8c00,
+
+    #ffed00,
+
+    #008026,
+
+    #004dff,
+
+    #750787
+
+  );
+
+  margin: var(--space-xl) 0;
+
+  border-radius: 999px;
+
+}

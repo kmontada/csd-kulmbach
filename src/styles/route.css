@@ -1,0 +1,40 @@
+/* Route Timeline */
+.route-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Route Card */
+.route-item {
+  padding: 1rem 1.2rem;
+
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+
+  transition: transform 0.2s ease;
+}
+
+.route-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Colors */
+.red { background: #d60087; }
+.orange { background: #ff6a00; }
+.yellow {
+  background: #ffcc00;
+  color: #1d1d1f;
+}
+.green { background: #3bb54a; }
+.blue { background: #1e90ff; }
+.violet { background: #7b2cbf; }

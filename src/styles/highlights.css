@@ -1,0 +1,90 @@
+/* Highlights Section */
+.highlights {
+  padding: 2.5rem 0 4.5rem;
+}
+
+/* Grid */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Card */
+.highlight-card {
+  padding: 2.2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card:nth-child(odd) {
+  padding-right: 3rem;
+}
+
+.highlight-card:nth-child(even) {
+  padding-left: 3rem;
+}
+
+/* Label */
+.highlight-label {
+  margin: 0 0 0.75rem;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: var(--primary);
+}
+
+/* Title */
+.highlight-card h3 {
+  margin: 0 0 0.6rem;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  color: var(--text);
+}
+
+/* Text */
+.highlight-card p:last-child {
+  margin: 0;
+  color: var(--text-light);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+
+  .highlights {
+    padding: 2rem 0 4rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    border-top: none;
+  }
+
+  .highlight-card {
+    padding: 1.6rem 0;
+  }
+
+  .highlight-card:nth-child(odd),
+  .highlight-card:nth-child(even) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .highlight-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .highlight-card p:last-child {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+}

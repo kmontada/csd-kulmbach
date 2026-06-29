@@ -1,0 +1,61 @@
+---
+import { program } from "../data/program";
+---
+
+<section class="program" id="programm">
+
+  <div class="container">
+
+    <p class="section-label">PROGRAMM</p>
+
+    <h2>So sieht der CSD-Tag aus.</h2>
+
+    <p class="program-intro">
+      Von der Demonstration bis zur Aftershow – gemeinsam feiern wir Vielfalt,
+      Demokratie und Zusammenhalt.
+    </p>
+
+    <div class="program-list">
+
+      {program.map((item) => (
+
+        <article class="program-item">
+
+          <div class="program-time">
+
+            {
+              item.type === "time" ? (
+
+                <>
+                  <span class="time-top">{item.top}</span>
+                  <span class="time-bottom">{item.bottom}</span>
+                </>
+
+              ) : (
+
+                <span class="program-label">
+                  {item.label}
+                </span>
+
+              )
+            }
+
+          </div>
+
+          <div class="program-content">
+
+            <h3>{item.title}</h3>
+
+            <p>{item.description}</p>
+
+          </div>
+
+        </article>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>

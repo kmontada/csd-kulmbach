@@ -1,0 +1,90 @@
+.hero {
+  /* 🔥 WICHTIG: maximale Priorität ohne !important Chaos */
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+
+  /* verhindert unerwünschte Verschiebungen */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+/* =========================
+   HEADLINE
+========================= */
+
+.hero h1 {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+
+  color: var(--text);
+}
+
+.hero h1 span {
+  color: var(--primary);
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.hero-text {
+  max-width: 620px;
+
+  margin: 1.5rem 0 2rem;
+
+  font-size: 1.15rem;
+  line-height: 1.75;
+
+  color: var(--text-light);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
+  color: var(--primary);
+
+  transition: opacity 0.2s ease;
+}
+
+.hero-button:hover {
+  opacity: 0.75;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+  .hero {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 10vw, 4rem);
+  }
+
+  .hero-text {
+    font-size: 1.05rem;
+    margin: 1.2rem 0 1.8rem;
+  }
+}

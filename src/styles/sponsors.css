@@ -1,0 +1,63 @@
+.sponsors {
+  padding: var(--space-xl) 0;
+}
+
+.sponsors-intro {
+  max-width: 700px;
+  color: var(--text-light);
+  margin-bottom: var(--space-lg);
+}
+
+/* =========================
+   LOGO ROW (NO BOXES)
+========================= */
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  overflow-x: auto;
+  padding: 1rem 0;
+
+  scroll-behavior: smooth;
+}
+
+/* scrollbar verstecken */
+.logo-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================
+   LOGOS FREISTEHEND
+========================= */
+
+.logo {
+  height: 210px;       /* 🔥 HIER steuerst du Größe */
+  width: auto;
+
+  object-fit: contain;
+
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08));
+
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.12));
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+  .logo {
+    height: 50px;
+  }
+
+  .logo-track {
+    gap: 2rem;
+  }
+}
