@@ -5,13 +5,13 @@ export const event = {
 
   motto: "Kulmbach braut Vielfalt.",
 
-  date: "12. Juli 2026",
+  date: "29. August 2026",
 
   city: "Kulmbach",
 
-  location: "Marktplatz Kulmbach",
+  location: "Innenstadt Kulmbach",
 
-  flyerImage: "/images/flyer-2026.jpeg",
+  flyerImage: "/images/flyer-2026.webp",
 
   flyerPdf: "/downloads/flyer-2026.pdf",
 };
