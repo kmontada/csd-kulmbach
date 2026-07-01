@@ -33,7 +33,9 @@
 ========================= */
 
 .logo {
-  height: 210px;       /* 🔥 HIER steuerst du Größe */
+
+  height: 380px;   /* vorher 300px → jetzt stärkerer Fokus */
+
   width: auto;
 
   object-fit: contain;
@@ -41,6 +43,7 @@
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08));
 
   transition: transform 0.2s ease, filter 0.2s ease;
+
 }
 
 .logo:hover {
@@ -54,10 +57,10 @@
 
 @media (max-width: 900px) {
   .logo {
-    height: 50px;
+    height: 120px;   /* statt 50px → sonst ist es Mini */
   }
 
   .logo-track {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }

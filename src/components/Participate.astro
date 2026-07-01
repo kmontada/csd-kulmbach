@@ -28,10 +28,23 @@ import { participate } from "../data/participate";
 
           <p>{item.text}</p>
 
-          <a href={item.link}>
-            {item.label} →
-          </a>
+         <a href={
 
+  item.label === "Helfer:in werden"
+
+    ? "mailto:csd.kulmbach@web.de?subject=Hilfe%20beim%20CSD%202026"
+
+    : item.label === "Kontakt aufnehmen"
+
+    ? "mailto:csd.kulmbach@web.de?subject=CSD%20Kulmbach%202026"
+
+    : item.link
+
+}>
+
+  {item.label} →
+
+</a>
         </article>
 
       ))}
