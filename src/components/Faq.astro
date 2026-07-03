@@ -29,7 +29,31 @@ import { faq } from "../data/faq";
 
           </summary>
 
-          <p>{item.answer}</p>
+          {typeof item.answer === "string" ? (
+  <p>{item.answer}</p>
+) : (
+  <div class="faq-answer">
+
+    {item.answer.map((block, index) => (
+      <div class="faq-block" key={index}>
+
+        {block.intro && <p><strong>{block.intro}</strong></p>}
+
+        {block.points && (
+          <ul>
+            {block.points.map((point) => (
+              <li>{point}</li>
+            ))}
+          </ul>
+        )}
+
+        {block.outro && <p>{block.outro}</p>}
+
+      </div>
+    ))}
+
+  </div>
+)}
 
         </details>
 
