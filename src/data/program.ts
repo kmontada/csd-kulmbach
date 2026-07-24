@@ -10,8 +10,8 @@ export const program = [
 
   {
     type: "time",
-    top: "15",
-    bottom: "30",
+    top: "16",
+    bottom: "15",
     title: "Shuttlebus",
     description:
       "Abfahrt Kulmbach ZOB nach Gössmannsreuth.",
