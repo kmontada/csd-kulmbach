@@ -20,7 +20,7 @@ export const program = [
   {
     type: "time",
     top: "16",
-    bottom: "00",
+    bottom: "30",
     title: "Aftershow-Party",
     description:
       "Live-Musik, Food, Drinks und Infostände an der Kulturschule Gössmannsreuth.",
