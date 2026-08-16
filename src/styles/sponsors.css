@@ -9,46 +9,89 @@
 }
 
 /* =========================
-   LOGO ROW (NO BOXES)
+   SLIDER WRAPPER
 ========================= */
 
-.logo-track {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-
-  overflow-x: auto;
-  padding: 1rem 0;
-
-  scroll-behavior: smooth;
-}
-
-/* scrollbar verstecken */
-.logo-track::-webkit-scrollbar {
-  display: none;
+.sponsor-slider {
+  overflow: hidden;
+  width: 100%;
 }
 
 /* =========================
-   LOGOS FREISTEHEND
+   TRACK (HIER LIEGT DER KEY FIX)
+========================= */
+
+.sponsor-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 4rem;
+
+  width: max-content;
+
+  animation: scroll 25s linear infinite;
+}
+
+/* Pause on hover */
+.sponsor-track:hover {
+  animation-play-state: paused;
+}
+
+/* Smooth infinite scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================
+   LOGO WRAPPER
+========================= */
+
+.logo-item {
+  min-width: 320px;
+  height: 240px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   LOGOS
 ========================= */
 
 .logo {
-
-  height: 380px;   /* vorher 300px → jetzt stärkerer Fokus */
-
-  width: auto;
+  max-height: 200px;
+  max-width: 320px;
 
   object-fit: contain;
 
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08));
-
-  transition: transform 0.2s ease, filter 0.2s ease;
-
+  transition: transform 0.2s ease;
 }
 
 .logo:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.12));
+  transform: scale(1.08);
+}
+
+.logo--round:hover {
+  transform: scale(1.22);
+}
+
+/* Runde Logos */
+.logo--round {
+  height: 150px;
+  width: 150px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  transform: scale(1.15);
 }
 
 /* =========================
@@ -57,10 +100,12 @@
 
 @media (max-width: 900px) {
   .logo {
-    height: 120px;   /* statt 50px → sonst ist es Mini */
+    max-height: 120px;
+    max-width: 200px;
   }
 
-  .logo-track {
-    gap: 1.5rem;
+  .logo-item {
+    min-width: 200px;
+    height: 160px;
   }
 }
