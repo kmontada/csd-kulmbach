@@ -69,7 +69,7 @@ export const faq = [
   {
     intro: "Übernachten in Kulmbach",
     points: [
-      "In Kulmbach stehen euch unterschiedliche Hotels zur Übernachtung zur Verfügung. Mit dem Taste-Hotel konnten wir einen Kooperationspartner gewinnen, der Gästen, die unseren CSD besuchen ein vergünstigtes Zimmer zur Verfügung stellt (nur so lange der Vorrat reicht). Schreibt uns für mehr Details gerne eine E-Mail.",
+      "In Kulmbach stehen euch unterschiedliche Hotels zur Übernachtung zur Verfügung.",
     ],
     outro: ""
   },
