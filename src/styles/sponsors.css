@@ -19,7 +19,7 @@
 }
 
 /* =========================
-   TRACK (HIER LIEGT DER KEY FIX)
+   TRACK (ENDLOS SLIDER)
 ========================= */
 
 .sponsor-track {
@@ -32,11 +32,8 @@
   width: max-content;
 
   animation: scroll 25s linear infinite;
-}
 
-/* Pause on hover */
-.sponsor-track:hover {
-  animation-play-state: paused;
+  will-change: transform;
 }
 
 /* Smooth infinite scroll */
@@ -60,8 +57,8 @@
   align-items: center;
   justify-content: center;
 
-  min-width: 140px;
-  height: auto;
+  min-width: 160px;
+  height: 200px;
 
   padding: 10px;
 }
@@ -71,8 +68,8 @@
 ========================= */
 
 .logo {
-  max-height: 200px;
-  max-width: 220px;
+  max-height: 220px;
+  max-width: 260px;
 
   width: auto;
   height: auto;
@@ -82,21 +79,27 @@
   display: block;
 }
 
+/* Hover (nur scale, KEIN pause mehr) */
 .logo:hover {
   transform: scale(1.08);
+  transition: transform 0.2s ease;
 }
 
-.logo--round:hover {
-  transform: scale(1.22);
-}
+/* =========================
+   RUNDE LOGOS
+========================= */
 
-/* Runde Logos */
 .logo--round {
   width: 160px;
   height: 160px;
 
   border-radius: 50%;
   object-fit: cover;
+}
+
+.logo--round:hover {
+  transform: scale(1.12);
+  transition: transform 0.2s ease;
 }
 
 /* =========================
@@ -110,17 +113,18 @@
   }
 
   .logo-item {
-    min-width: 110px;
+    min-width: 130px;
+    height: 160px;
     padding: 6px;
   }
 
   .logo {
-    max-height: 90px;
-    max-width: 140px;
+    max-height: 120px;
+    max-width: 160px;
   }
 
   .logo--round {
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 110px;
   }
 }
