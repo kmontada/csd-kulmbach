@@ -5,7 +5,7 @@ export const program = [
     bottom: "00",
     title: "Demonstration",
     description:
-      "Start am Platz gegenüber des Bahnhofs in Kulmbach. Gemeinsam ziehen wir durch die Innenstadt bis zum Marktplatz.",
+      "Start im Gasfabrikgäßchen in Kulmbach. Gemeinsam ziehen wir durch die Innenstadt bis zum Marktplatz.",
   },
 
   {

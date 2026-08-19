@@ -11,33 +11,66 @@ import "../styles/route.css";
       Die Demonstration startet am Bahnhof und führt durch die Innenstadt bis zum Marktplatz.
     </p>
 
-    <div class="route-list">
+    <div class="route-content">
 
-      <div class="route-item red">
-        <span>Start: Bahnhof Kulmbach</span>
+      <!-- LINKS: ROUTE -->
+      <div class="route-list">
+
+        <div class="route-item red">
+          <span>Start: Gasfabrikgäßchen Kulmbach</span>
+        </div>
+
+        <div class="route-item orange">
+          <span>Fritz-Hornschuch-Straße</span>
+        </div>
+
+        <div class="route-item yellow">
+          <span>Kressenstein</span>
+        </div>
+
+        <div class="route-item green">
+          <span>Langgasse</span>
+        </div>
+
+        <div class="route-item blue">
+          <span>Oberhacken / Obere Stadt</span>
+        </div>
+
+        <div class="route-item violet">
+          <span>Ziel: Marktplatz Kulmbach</span>
+        </div>
+
       </div>
 
-      <div class="route-item orange">
-        <span>Fritz-Hornschuch-Straße</span>
-      </div>
+      <!-- RECHTS: GIF (CLICKABLE) -->
+      <div class="route-media">
 
-      <div class="route-item yellow">
-        <span>Kressenstein</span>
-      </div>
+        <button class="route-media-btn" id="openRouteGif">
+          <img src="/route.gif" alt="Route Visualisierung CSD Kulmbach" />
+        </button>
 
-      <div class="route-item green">
-        <span>Langgasse</span>
-      </div>
-
-      <div class="route-item blue">
-        <span>Oberhacken / Obere Stadt</span>
-      </div>
-
-      <div class="route-item violet">
-        <span>Ziel: Marktplatz Kulmbach</span>
       </div>
 
     </div>
 
   </div>
 </section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <img src="/route.gif" alt="Route groß" />
+</div>
+
+<!-- SCRIPT -->
+<script>
+  const btn = document.getElementById("openRouteGif");
+  const lightbox = document.getElementById("lightbox");
+
+  btn.addEventListener("click", () => {
+    lightbox.classList.add("active");
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+</script>

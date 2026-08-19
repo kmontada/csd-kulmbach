@@ -1,5 +1,5 @@
 export const route = {
-  start: "Platz gegenüber des Bahnhofs",
+  start: "Gasfabrikgäßchen in Kulmbach",
   destination: "Marktplatz Kulmbach",
 
   description:

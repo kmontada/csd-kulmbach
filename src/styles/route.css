@@ -1,11 +1,11 @@
-/* Route Timeline */
 .route-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+  flex: 1;
 }
 
-/* Route Card */
+/* =========================
+   ROUTE ITEM
+========================= */
+
 .route-item {
   padding: 1rem 1.2rem;
 
@@ -22,6 +22,8 @@
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 
   transition: transform 0.2s ease;
+
+  margin-bottom: 0.8rem;
 }
 
 .route-item:hover {
@@ -38,3 +40,92 @@
 .green { background: #3bb54a; }
 .blue { background: #1e90ff; }
 .violet { background: #7b2cbf; }
+
+/* =========================
+   LAYOUT
+========================= */
+
+.route-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+/* LINKS */
+.route-list {
+  flex: 1;
+}
+
+/* RECHTS */
+.route-media {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* BUTTON RESET */
+.route-media-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* GIF */
+.route-media img {
+  width: 100%;
+  max-width: 420px;
+
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+
+  transition: transform 0.2s ease;
+}
+
+.route-media-btn:hover img {
+  transform: scale(1.03);
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0,0,0,0.85);
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+
+  border-radius: 12px;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+  .route-content {
+    flex-direction: column;
+  }
+
+  .route-media img {
+    max-width: 100%;
+  }
+}
