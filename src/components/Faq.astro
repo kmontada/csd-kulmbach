@@ -18,102 +18,107 @@ import { faq } from "../data/faq";
     <div class="faq-list">
 
       {faq.map((item) => (
-
         <details class="faq-item">
 
           <summary>
-
             <span>{item.question}</span>
-
             <span class="plus">+</span>
-
           </summary>
 
           {typeof item.answer === "string" ? (
-  <p>{item.answer}</p>
-) : (
-  <div class="faq-answer">
+            <p>{item.answer}</p>
+          ) : (
+            <div class="faq-answer">
 
-    {item.answer.map((block, index) => (
-      <div class="faq-block" key={index}>
+              {item.answer.map((block, index) => (
+                <div class="faq-block" key={index}>
 
-        {block.intro && <p><strong>{block.intro}</strong></p>}
+                  {block.intro && <p><strong>{block.intro}</strong></p>}
 
-        {block.points && (
-          <ul>
-            {block.points.map((point) => (
-              <li>{point}</li>
-            ))}
-          </ul>
-        )}
+                  {block.points && (
+                    <ul>
+                      {block.points.map((point) => (
+                        <li>{point}</li>
+                      ))}
+                    </ul>
+                  )}
 
-        {block.outro && <p>{block.outro}</p>}
+                  {block.outro && <p>{block.outro}</p>}
 
-      </div>
-    ))}
+                </div>
+              ))}
 
-  </div>
-)}
+            </div>
+          )}
 
         </details>
-
       ))}
 
     </div>
 
-<div class="footer-sponsors">
+    {/* =========================
+        FOOTER SPONSORS
+    ========================= */}
 
- <h3>Wir bedanken uns bei unseren zahlreichen Sponsoren und Kooperationspartnern für die Unterstützung.</h3> <br>
+    <div class="footer-sponsors-section">
 
-  <a href="https://amnesty-kulmbach.de" target="_blank" rel="noopener noreferrer">
-    <img src="/amnestylogo.webp" alt="Amnesty International" />
-  </a>
+      <h3 class="sponsors-title">
+        Wir bedanken uns bei unseren zahlreichen Sponsoren und Kooperationspartnern für die Unterstützung.
+      </h3>
 
-  <a href="https://franzundgloria.de" target="_blank" rel="noopener noreferrer">
-    <img src="/fglogo.webp" alt="Franz & Gloria" />
-  </a>
+      <div class="footer-sponsors">
 
-  <a href="https://cantine-ruin.de" target="_blank" rel="noopener noreferrer">
-    <img src="/cantineruin.webp" alt="Cantine Ruin" />
-  </a>
+        <a href="https://amnesty-kulmbach.de" target="_blank" rel="noopener noreferrer">
+          <img src="/amnestylogo.webp" alt="Amnesty International" />
+        </a>
 
-  <a href="https://neue-filmbuehne.de" target="_blank" rel="noopener noreferrer">
-    <img src="/filmbuehnelogo.webp" alt="Filmbühne" />
-  </a>
+        <a href="https://franzundgloria.de" target="_blank" rel="noopener noreferrer">
+          <img src="/fglogo.webp" alt="Franz & Gloria" />
+        </a>
 
-    <a href="https://www.raps-stiftung.de" target="_blank" rel="noopener noreferrer">
-    <img src="/arslogo.webp" alt="Adalbert Raps Stiftung" />
-  </a>
+        <a href="https://cantine-ruin.de" target="_blank" rel="noopener noreferrer">
+          <img src="/cantineruin.webp" alt="Cantine Ruin" />
+        </a>
 
-      <a href="https://awo-kulmbach.de" target="_blank" rel="noopener noreferrer">
-    <img src="/awologo.webp" alt="AWO Kreisverband Kulmbach Logo" />
-  </a>
+        <a href="https://neue-filmbuehne.de" target="_blank" rel="noopener noreferrer">
+          <img src="/filmbuehnelogo.webp" alt="Filmbühne" />
+        </a>
 
-   <a href="https://www.cineplex.de/kulmbach" target="_blank" rel="noopener noreferrer">
-    <img src="/cineplexlogo.webp" alt="Cineplex Kulmbach" />
-  </a>
+        <a href="https://www.raps-stiftung.de" target="_blank" rel="noopener noreferrer">
+          <img src="/arslogo.webp" alt="Adalbert Raps Stiftung" />
+        </a>
 
-     <a href="https://www.kulmbach.de" target="_blank" rel="noopener noreferrer">
-    <img src="/kulmbachlogo.webp" alt="Stadt Kulmbach" />
-  </a>
+        <a href="https://awo-kulmbach.de" target="_blank" rel="noopener noreferrer">
+          <img src="/awologo.webp" alt="AWO Kreisverband Kulmbach Logo" />
+        </a>
 
-       <a href="https://www.landkreis-kulmbach.de/startseite" target="_blank" rel="noopener noreferrer">
-    <img src="/landkreislogo.webp" alt="Landkreis Kulmbach" />
-  </a>
+        <a href="https://www.cineplex.de/kulmbach" target="_blank" rel="noopener noreferrer">
+          <img src="/cineplexlogo.webp" alt="Cineplex Kulmbach" />
+        </a>
 
-         <a href="https://www.patchwork-kulmbach.de" target="_blank" rel="noopener noreferrer">
-    <img src="/patchworklogo.webp" alt="Patchwork Kulmbach" />
-  </a>
+        <a href="https://www.kulmbach.de" target="_blank" rel="noopener noreferrer">
+          <img src="/kulmbachlogo.webp" alt="Stadt Kulmbach" />
+        </a>
 
-           <a href="https://www.radio-plassenburg.de" target="_blank" rel="noopener noreferrer">
-    <img src="/radioplassenburglogo.webp" alt="Radio Plassenburg" />
-  </a>
+        <a href="https://www.landkreis-kulmbach.de/startseite" target="_blank" rel="noopener noreferrer">
+          <img src="/landkreislogo.webp" alt="Landkreis Kulmbach" />
+        </a>
 
-             <a href="https://www.instagram.com/schwestern.kulmbach/" target="_blank" rel="noopener noreferrer">
-    <img src="/schwesternlogo.webp" alt="Schwestern Kulmbach" />
-  </a>
+        <a href="https://www.patchwork-kulmbach.de" target="_blank" rel="noopener noreferrer">
+          <img src="/patchworklogo.webp" alt="Patchwork Kulmbach" />
+        </a>
 
-</div>
+        <a href="https://www.radio-plassenburg.de" target="_blank" rel="noopener noreferrer">
+          <img src="/radioplassenburglogo.webp" alt="Radio Plassenburg" />
+        </a>
+
+        <a href="https://www.instagram.com/schwestern.kulmbach/" target="_blank" rel="noopener noreferrer">
+          <img src="/schwesternlogo.webp" alt="Schwestern Kulmbach" />
+        </a>
+
+      </div>
+
+    </div>
 
   </div>
 

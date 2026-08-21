@@ -1,4 +1,7 @@
-/* FAQ Section */
+ /* =========================
+   FAQ SECTION
+========================= */
+
 .faq {
   padding: 8rem 0;
 }
@@ -25,7 +28,10 @@
   color: var(--text-light);
 }
 
-/* List */
+/* =========================
+   FAQ LIST
+========================= */
+
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -85,6 +91,28 @@
   color: var(--text-light);
 }
 
+/* =========================
+   FOOTER SPONSORS
+========================= */
+
+.footer-sponsors-section {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+/* Überschrift */
+.footer-sponsors-section h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+
+  color: var(--text-light);
+
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+}
+
+/* Logos Container */
 .footer-sponsors {
   display: flex;
   flex-wrap: wrap;
@@ -92,12 +120,9 @@
   align-items: center;
 
   gap: 2.5rem;
-
-  padding: 2rem 0;
 }
 
-/* Links als Logo Container */
-
+/* Links */
 .footer-sponsors a {
   display: flex;
   align-items: center;
@@ -108,7 +133,7 @@
 
 /* Logos */
 .footer-sponsors img {
-  max-height: 200px;
+  max-height: 180px;
   max-width: 220px;
 
   object-fit: contain;
@@ -119,15 +144,17 @@
   transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
 }
 
-/* Hover Effekt */
+/* Hover */
 .footer-sponsors a:hover img {
   transform: scale(1.08);
   opacity: 1;
   filter: grayscale(0%);
 }
 
+/* =========================
+   MOBILE
+========================= */
 
-/* Mobile */
 @media (max-width: 900px) {
 
   .faq {
@@ -141,15 +168,18 @@
   .faq-item p {
     font-size: 1.05rem;
   }
-}
-/* Mobile */
-@media (max-width: 900px) {
+
   .footer-sponsors {
     gap: 1.5rem;
   }
 
   .footer-sponsors img {
-    max-height: 50px;
-    max-width: 110px;
+    max-height: 60px;
+    max-width: 120px;
+  }
+
+  .footer-sponsors-section h3 {
+    font-size: 0.9rem;
+    padding: 0 1rem;
   }
 }
