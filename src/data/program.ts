@@ -14,7 +14,7 @@ export const program = [
     bottom: "15",
     title: "Shuttlebus",
     description:
-      "Abfahrt Kulmbach ZOB nach Gössmannsreuth.",
+      "Abfahrt Kulmbach ZOB nach Gössmannsreuth. Der Busshuttle wird ermöglicht durch den Weismainer Tankstellenunternehmer Tobias Eichner und die Kulmbacher Maintabac Retail Gruppe.",
   },
 
   {
