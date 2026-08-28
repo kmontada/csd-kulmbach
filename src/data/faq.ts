@@ -111,7 +111,7 @@ export const faq = [
       "Keine Symbole oder Kleidung mit extremistischen, rassistischen oder diskriminierenden Botschaften",
       "Gesichtsverdeckende Kleidung, Masken oder Ähnliches müssen vor Beginn des Demoumzugs bei der Polizei unter Vorlage eines gültigen Ausweisdokuments angemeldet werden",
       "Fahnen und Banner der teilnehmenden Organisationen mit eindeutigem CSD-positivem-Bezug sind erlaubt",
-      "Regelung für Fahnenstangen: Material nur aus Holz und Konststuff mit max. 1,50m Länge und 20mm Durchmesser"
+      "Regelung für Fahnenstangen: Material nur aus Holz und Kunststoff mit max. 1,50m Länge und 20mm Durchmesser"
     ],
   },
   {
@@ -121,7 +121,7 @@ export const faq = [
     ],
   },
     {
-    intro: "Wägen udn Fahrzeuge",
+    intro: "Wägen und Fahrzeuge",
     points: [
       "Demowägen sind nicht vorgesehen. Für Regelungen rund um Bollerwägen & Co. setzt euch bitte vorher mit dem CSD-Orga-Team in Verbindung (csd.kulmbach@web.de)",
     ],
